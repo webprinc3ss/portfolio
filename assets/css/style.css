@@ -36,24 +36,47 @@ header {
     top: 0;
     z-index: 9999;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 h1 {
     font-weight: bold;
-    font-size: 35px;
+    font-size: 25px;
     font-style: italic;
+    letter-spacing: 3px;
     color: var(--primary-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0.5);
 }
 
-header a {
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 1vw;
+    color: var(--primary-color);
+    text-shadow: ;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header ul li a {
     text-decoration: none;
     color: var(--primary-color);
 }
 
-header nav {
-    margin: 7px 0;
-
+header ul li a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
+
 /*End Header*/
