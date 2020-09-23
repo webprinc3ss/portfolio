@@ -20,8 +20,8 @@ body {
 header {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
-    opacity: 0.90;
-    background-image: url("../images/desert_background.jpg");
+    /*opacity: 0.90;*/
+    background-image: url("../images/desert_background_header.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -78,5 +78,38 @@ header ul li a:hover {
     color: var(--secondary-color);
     text-decoration: underline;
 }
-
 /*End Header*/
+/*Begin Hero*/
+
+.hero {
+    background-image: url("../images/desert_background.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-attachment: fixed;
+    background-position:80%;
+    min-height: 500px;
+    z-index: 9998;
+}
+
+.hero #tag-line {
+    width: 100%;
+    margin: 3.5%;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+
+}
+
+.hero #tag-line h2 {
+    text-align: right;
+    color: var(--secondary-color);
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    font-style: italic;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+}
