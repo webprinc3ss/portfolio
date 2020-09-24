@@ -196,9 +196,9 @@ article {
     width: 400px;
     height: 400px;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(9, 5vw);
-    grid-gap: 15px;
+    grid-template-columns: repeat(10, 3vw);
+    grid-template-rows: repeat(10, 3vw)
+    grid-gap:0px;
 }
 
 
