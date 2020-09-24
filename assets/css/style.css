@@ -192,6 +192,17 @@ article {
 } */
 
 
+.work-grid-container {
+    display: grid;
+}
+
+.work-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border: 1px solid #000;
+    color: var(--tertiary-color);
+  }
 
 section .mywork {
 
