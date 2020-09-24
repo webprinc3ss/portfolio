@@ -16,8 +16,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*.flex-row {
-    display: flex;}*/
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 /* Start Header */
@@ -155,6 +159,7 @@ main hr {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+}
 */
 
 .aboutme {
@@ -191,16 +196,19 @@ article {
 
 } */
 
+#mywork {
 
-.work-grid-container {
-    width: 400px;
-    height: 400px;
-    display: grid;
-    grid-template-columns: repeat(10, 3vw);
-    grid-template-rows: repeat(10, 3vw)
-    grid-gap:0px;
 }
 
+.work-grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(10, 5vw);
+    grid-template-rows: repeat(4, 5vw);
+    grid-gap: 0px;
+    text-align: center;
+
+}
 
 .work-grid-item {
     background-color: var(--primary-color);
@@ -216,36 +224,29 @@ article {
 
 .work-grid-item--1 {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 6;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 4;
 }
 
 .work-grid-item--2 {
-    grid-column-start: 5;
-    grid-column-end: 7;
+    grid-column-start: 6;
+    grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 1;
 }
 
 .work-grid-item--3 {
-    grid-column-start: 7;
-    grid-column-end: 9;
+    grid-column-start: 8;
+    grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 1;
 }
 
 .work-grid-item--4 {
-    grid-column-start: 5;
-    grid-column-end: 9;
+    grid-column-start: 6;
+    grid-column-end: 10;
     grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-end: 4;
 }
 
-section .mywork {
-
-}
-
-footer {
-
-}
