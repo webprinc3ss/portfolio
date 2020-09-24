@@ -16,9 +16,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*.flex-row {
+    display: flex;*/
+}
+
 /* Start Header */
 header {
-    padding: 20px 50px;
+    padding: 20px 35px;
     background-color: var(--tertiary-color);
     /*opacity: 0.90;*/
     background-image: url("../images/desert_background_header.jpg");
@@ -125,4 +129,74 @@ main {
     -webkit-box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.49);
     -moz-box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.49);
     box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.49);
+}
+
+main h2 {
+    color: var(--tertiary-color);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+main hr {
+    height: 1px;
+    background-color: #000;
+    border: none;
+    width: 15%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+/*.about {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+*/
+
+.aboutme {
+    flex: 2 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+.aboutimg {
+    flex: 1 12%;
+    margin-right: 20px
+}
+
+.metext {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+}
+
+/*.about img {
+    display: flex;
+    align-items: center;
+
+
+    }
+
+article {
+    display: flex;
+    align-items: center;
+
+} */
+
+
+
+section .mywork {
+
+}
+
+footer {
+
 }
