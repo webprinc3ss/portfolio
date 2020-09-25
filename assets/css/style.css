@@ -2,18 +2,20 @@
     --primary-color: #d98e00;
     --secondary-color: #a5bf39;
     --tertiary-color: #000;
+
 }
 
 * {
     margin:0;
     padding:0;
-    box-sizing: 0;
+    box-sizing:0;
 }
 
 body {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .flex-row {
@@ -68,7 +70,7 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    font-size: 1vw;
+    font-size: 1.2em;
     color: var(--primary-color);
 }
 
@@ -103,6 +105,7 @@ header ul li a:hover {
     -moz-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
     box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
     position: relative;
+
 }
 
 .hero #tag-line {
@@ -129,10 +132,11 @@ main {
     width: 80%;
     text-align: center;
     margin: 0 auto;
-    padding: 20px 35px 20px 35px;
+    padding: 5em 5em 5em 5em;
     -webkit-box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.49);
     -moz-box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.49);
     box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.49);
+    /*border: 1px solid red;*/
 }
 
 main h2 {
@@ -146,33 +150,53 @@ main hr {
     height: 1px;
     background-color: #000;
     border: none;
-    width: 15%;
+    width: 20em;
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-
-
-/*.about {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
+#about {
+    scroll-margin-top: 4.5em;
 }
-*/
+
+/*section .about-section {
+padding: 0px 500px 0px 500px;
+}*/
+
+
 
 .aboutme {
     flex: 2 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    /*border: 1px solid red;*/
+    margin-bottom: 1em;
+    justify-content: center;
+      justify-content: center;
+
 
 }
 
 .aboutimg {
-    flex: 1 12%;
-    margin-right: 20px
+    display: inline-flex;
+    flex-wrap: wrap;
+    /*margin-right: 20px;*/
+    /*border: 1px solid red;*/
+    justify-content: center;
+
+}
+
+.aboutimg img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    /*margin-right: 20px;*/
+    border-radius: 25%;
+    height: 150px;
+    border: 1px solid red;
+  
+
 }
 
 .metext {
@@ -181,6 +205,18 @@ main hr {
     flex-wrap: wrap;
     align-items: center;
     text-align: left;
+    padding-left: 2em;
+    /*border: 1px solid red;*/
+}
+.metext p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 1.2em;
+    letter-spacing: .02em;
+    margin-top: .5em ;
+    margin-bottom: .5em ;
 }
 
 /*.about img {
@@ -197,16 +233,20 @@ article {
 } */
 
 #mywork {
+    scroll-margin-top: 4.5em;
 
 }
 
 .work-grid-container {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(10, 5vw);
-    grid-template-rows: repeat(4, 5vw);
+    grid-template-columns: repeat(9, 5em);
+    grid-template-rows: repeat(3, 5em);
     grid-gap: 0px;
     text-align: center;
+    /*border: 1px solid red;*/
 
 }
 
@@ -214,6 +254,10 @@ article {
     background-color: var(--primary-color);
     border: 1px solid #000;
     color: var(--tertiary-color);
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
 .work-img {
@@ -250,3 +294,37 @@ article {
     grid-row-end: 4;
 }
 
+footer {
+    margin-top: 2em;
+    border: 1px solid red;
+}
+
+footer nav {
+    margin: 7px 0;
+}
+
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 1.2em;
+    color: var(--primary-color);
+    list-style: none;
+}
+
+footer nav ul li {
+    padding: 10px;
+
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+footer ul li a:hover {
+
+    text-decoration: underline;
+}
