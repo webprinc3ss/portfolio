@@ -322,6 +322,10 @@ main footer  {
     width: auto;
 }
 
+.tel {
+    margin-bottom: 1em;
+}
+
 main footer a {
     text-decoration: none;
     color: var(--tertiary-color);
@@ -350,19 +354,6 @@ main footer ul li {
     padding: 2em 2em 0px 2em;
 }
 
-/*main footer ul li a {
-    text-decoration: none;
-    color: var(--tertiary-color);
-    font-weight: bold;
-    padding: 4px;
-}
-
-main footer ul li a:hover {
-    font-weight: bold;
-    background-color: var(--primary-color);
-}*/
-
-
 .copy {
     text-align:center;
 }
@@ -370,15 +361,15 @@ main footer ul li a:hover {
 /*Media queries for tablets and smaller*/
 @media screen and (max-width: 768px){
 
-        header {
-            background-size: cover;
-            padding-bottom: 0;
-            justify-content: center;
-            position: relative;
-            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,);
-            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-        }
+    header {
+        background-size: cover;
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    }
         
         h1 {
             width: 100%;
@@ -416,7 +407,7 @@ main footer ul li a:hover {
             justify-content: center;
         }
         main {
-            padding: 2em 5em 1em 5em;
+            padding: 2em 1em 1em 1em;
 
         }
 
@@ -426,7 +417,7 @@ main footer ul li a:hover {
             
         .aboutimg img {
             display: block;
-            height: 20em;
+            height: 18em;
             margin-top: 1em;
             margin-bottom: 1em;
             }
@@ -435,6 +426,45 @@ main footer ul li a:hover {
         width: 100%;
         text-align: left;
         padding-left: 0em;
+}
+.work-grid-container {
+
+    /*grid-template-columns: repeat(9, 1f);
+    grid-template-rows: repeat(4, 1f);*/
+
+    grid-template-columns: 1f 1f 1f 1f 1f 1f 1f 1f 1f;
+    grid-template-rows: 2f 1f 1f 1f 1f 1f;
+
+}
+
+.work-grid-item--1 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.work-grid-item--2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.work-grid-item--3 {
+
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.work-grid-item--4 {
+    height: 5em;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 6;
 }
 
         main footer  {
@@ -462,15 +492,7 @@ main footer ul li a:hover {
     
 
 
-    /*.aboutimg img {
-        height: 20em;
-        margin-bottom: 2em;
-    }  
-    
-    .aboutimg {
-        display: block;
 
-        }*/
 
     }
 
