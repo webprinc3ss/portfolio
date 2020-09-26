@@ -110,7 +110,7 @@ header ul li a:hover {
 .hero #tag-line h2 {
     text-align: right;
     color: var(--secondary-color);
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.5;
     letter-spacing: 5px;
     font-style: italic;
@@ -366,7 +366,7 @@ header {
     }
         
  h1 {
-     width: 100%;
+    width: 100%;
     text-align: center;
      }
     
@@ -390,12 +390,20 @@ header ul li a {
 .hero {
     min-height: 200px;
      }
-        
+     
 .hero #tag-line {
     margin: 0;
     display:flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 3em;
+    }
+
+.hero #tag-line h2 {
+    text-align: center;
+    -webkit-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0);
+    box-shadow: 0px 3px 15px 10px rgba(0,0,0,0);
     }
     
 main {
