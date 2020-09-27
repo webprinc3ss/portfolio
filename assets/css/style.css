@@ -450,7 +450,7 @@ header nav ul {
     line-height: 1.0;
     letter-spacing: 1px;
     font-style: italic;
-    padding: 2em;
+    padding: 2em 0;
     }
 
     
@@ -475,6 +475,7 @@ main {
     }
     
 .metext {
+    font-size: 18px;
     width: 100%;
     text-align: left;
     padding-left: 0em;
@@ -514,6 +515,15 @@ main {
     grid-row-start: 6;
     grid-row-end: 6;
     }
+
+.ani-container .ani-image {
+    opacity: 0.3;
+    }
+    
+.ani-container .middle {
+    opacity: 1;
+    }
+
 
 main footer  {
     margin: 2.5em 0;
