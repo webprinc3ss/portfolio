@@ -364,8 +364,9 @@ main footer ul li {
 
     header {
         background-image: url("../images/desert_background8.jpg");
-        background-size: 700px;
-        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 320px;
+        height: 180px;
         padding-bottom: 0;
         justify-content: center;
         position: relative;
@@ -432,7 +433,9 @@ header nav ul {
     .hero {
     display: block;
     background-image: url("../images/desert_background8.jpg");
-    background-size: 700px;
+    object-fit: cover;
+    width: 320px;
+    height: 180px;
      }
 
          
