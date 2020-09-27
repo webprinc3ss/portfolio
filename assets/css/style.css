@@ -26,10 +26,15 @@ body {
 header {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
-    background-image: url("../images/desert_background_header.jpg");
-    background-size: cover;
+    background-image: url("../images/desert_background.jpg");
+    height: 50%;
+/*background-position: center;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position:80%;
     background-attachment: fixed;
-    background-position: 80%;
+
     -webkit-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
     -moz-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
     box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
@@ -84,6 +89,30 @@ header ul li a:hover {
 /*Begin Hero*/
 .hero {
     background-image: url("../images/desert_background.jpg");
+    height: 50%;
+/*background-position: center;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position:80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-attachment: fixed;
+
+    min-height: 500px;
+    z-index: 9998;
+    -webkit-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
+    -moz-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
+    box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
+    position: relative;
+}
+
+
+
+/*.hero {
+    background-image: url("../images/desert_background.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -97,7 +126,7 @@ header ul li a:hover {
     -moz-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
     box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
     position: relative;
-}
+}*/
 
 .hero #tag-line {
     width: 100%;
@@ -362,7 +391,7 @@ main footer ul li {
 /*Media queries for phones and larger*/
 @media screen and (min-width: 200px) and (max-width: 767px)  {
 
-    header {
+    /*header {
         background-image: url("../images/desert_background.jpg");
         object-fit: scale-down;
         padding-bottom: 0;
@@ -371,7 +400,7 @@ main footer ul li {
         -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,);
         -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
          box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-        }
+        }*/
             
      h1 {
         width: 100%;
@@ -428,12 +457,12 @@ header nav ul {
 }
 
     
-    .hero {
+    /*.hero {
     display: block;
     background-image: url("../images/desert_background.jpg");
     object-fit: scale-down;
 
-     }
+     }*/
 
          
     .hero #tag-line {
