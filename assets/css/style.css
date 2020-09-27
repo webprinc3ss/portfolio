@@ -26,7 +26,7 @@ body {
 header {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
-    background-image: url("../images/desert_background.png");
+    background-image: url("../images/desert_background.jpg");
     height: 50%;
     /*background-position: center;*/
     background-repeat: no-repeat;
@@ -87,7 +87,7 @@ header ul li a:hover {
 
 /*Begin Hero*/
 .hero {
-    background-image: url("../images/desert_background.png");
+    background-image: url("../images/desert_background.jpg");
     height: 50%;
     /*background-position: center;*/
     background-repeat: no-repeat;
