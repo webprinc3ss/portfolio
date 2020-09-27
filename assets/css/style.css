@@ -364,7 +364,7 @@ main footer ul li {
 
     header {
         background-image: url("../images/desert_background8.jpg");
-        background-size: autot;
+        background-size: auto;
         background-repeat: no-repeat;
         padding-bottom: 0;
         justify-content: center;
