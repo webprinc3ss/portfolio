@@ -370,7 +370,7 @@ main footer ul li {
 @media screen and (min-width: 200px) and (max-width: 767px)  {
 
     header {
-        background-size: 1200px 800px;
+        background-size: 800px 600px;
         padding-bottom: 0;
         justify-content: center;
         position: relative;
