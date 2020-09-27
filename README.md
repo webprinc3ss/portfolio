@@ -17,7 +17,7 @@ Animation: https://github.com/webprinc3ss/portfolio/blob/master/assets/images/po
 Screenshot: https://github.com/webprinc3ss/portfolio/blob/master/assets/images/portfolio_screenshot.png
 
 ## Credit
-Hand-coded and designed with ❤️ by webprinc3ss. 
+Hand-coded and designed with ❤️ by webprinc3ss (me).
 
 "Hero" photograph taken in the desert by me during a night photography class.
 
