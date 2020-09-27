@@ -26,14 +26,10 @@ body {
 header {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
-    background-image: url("../images/desert_background.jpg");
-    height: 50%;
-    /*background-position: center;*/
-    background-repeat: no-repeat;
+    background-image: url("../images/desert_background_header.jpg");
     background-size: cover;
-    position: relative;
-    background-position:80%;
     background-attachment: fixed;
+    background-position: 80%;
     -webkit-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
     -moz-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
     box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
@@ -88,18 +84,13 @@ header ul li a:hover {
 /*Begin Hero*/
 .hero {
     background-image: url("../images/desert_background.jpg");
-    height: 50%;
-    /*background-position: center;*/
-    background-repeat: no-repeat;
-     background-size: cover;
-    position: relative;
-    background-position:80%;
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-end;
     background-attachment: fixed;
-
+    background-position:80%;
     min-height: 500px;
     z-index: 9998;
     -webkit-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
@@ -370,7 +361,6 @@ main footer ul li {
 @media screen and (min-width: 200px) and (max-width: 767px)  {
 
     header {
-        background-size: 800px 600px;
         padding-bottom: 0;
         justify-content: center;
         position: relative;
@@ -435,7 +425,7 @@ header nav ul {
 
     
 .hero {
-    background-size: 1200px 800px;
+
     display: block;
      }
      
