@@ -121,7 +121,7 @@ header ul li a:hover {
     font-style: italic;
     text-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
 }
-
+/*Main section begin */
 main {
     background-color: var(--secondary-color);
     position: relative;
@@ -318,8 +318,9 @@ main hr {
 .ani-mini-text {
     font-size: 16px;
   }
- /* End Animation */ 
-
+/* End Animation */ 
+/* End main */
+/*Begin Footer*/
 main footer  {
     margin: 2.5em 0;
     width: auto;
@@ -360,7 +361,7 @@ main footer ul li {
 .copy {
     text-align:center;
 }
-
+/*End Footer*/
 /*Media queries for phones and larger*/
 @media screen and (min-width: 200px) and (max-width: 767px)  {
 
@@ -371,8 +372,6 @@ header {
     -webkit-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
     -moz-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
     box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
-    /*position: sticky;
-    position: -webkit-sticky;*/
     top: 0;
     z-index: 9999;
     }
@@ -437,7 +436,6 @@ header nav ul {
 .hero {
     visibility:hidden;
     display: none;
-    /*display: block;*/
      }
 
 .media {
@@ -526,7 +524,7 @@ main {
 
 
 main footer  {
-    margin: 2.5em 0;
+    margin: 10px 0;
     text-align:center;
     justify-content: center;
     }
@@ -542,15 +540,11 @@ main footer ul li {
     padding: 0em 0em 0em 0em;
     width: 100%;
     } 
+
+.copy {
+    margin: 0;
+    padding: 0;
+    }
 }
-
-
-
-
-
-     
-
-
-
 
 
