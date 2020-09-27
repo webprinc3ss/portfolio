@@ -261,6 +261,9 @@ main hr {
 }
 
 /* Begin Animation */
+
+
+
 .ani-container {
     position: relative;
     width: 100%;
@@ -286,6 +289,7 @@ main hr {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
+  
   
 .ani-container:hover .ani-image {
     opacity: 0.3;
@@ -517,6 +521,35 @@ header nav ul {
         grid-row-start: 6;
         grid-row-end: 6;
     }
+
+    .ani-container {
+        position: relative;
+
+        z-index: 9996;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+    .ani-image {
+        opacity: 1;
+    
+        width: 100%;
+        height: 100%;
+        transition: .0s ease;
+        backface-visibility: hidden;
+        text-align: center;
+        z-index: 9997;
+      }
+      
+    .middle {
+    
+
+
+        z-index: 9998;
+      }
+      
+  
     
     main footer  {
         margin: 2.5em 0;
