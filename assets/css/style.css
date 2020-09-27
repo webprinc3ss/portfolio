@@ -361,7 +361,7 @@ main footer ul li {
  
 
     header {
-        background-image: url("../images/desert_background3.jpg");
+        background-image: url("../images/desert_background.jpg");
         background-size: cover;
         padding-bottom: 0;
         justify-content: center;
@@ -433,7 +433,7 @@ header nav ul {
     
 .hero {
     display: block;
-    background-image: url("../images/desert_background3.jpg");
+    background-image: url("../images/desert_background.jpg");
      }
 
          
