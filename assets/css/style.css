@@ -293,7 +293,6 @@ main hr {
     text-align: center;
   }
   
-  
 .ani-container:hover .ani-image {
     opacity: 0.3;
   }
@@ -467,7 +466,6 @@ main {
     -moz-box-shadow: 0px 0px 0px 10px rgba(0,0,0,0);
     box-shadow: 0px 0px 0px 10px rgba(0,0,0,0);
     }
-    
                 
 .aboutimg img {
     display: block;
@@ -535,9 +533,6 @@ main footer ul li {
     width: 100%;
     } 
 }
-    
-
-
 
 
 
