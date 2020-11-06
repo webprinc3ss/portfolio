@@ -73,11 +73,16 @@ header nav ul li {
 header ul li a {
     text-decoration: none;
     color: var(--primary-color);
+    background-color: (--secondary-color);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 header ul li a:hover {
-    color: var(--secondary-color);
-    text-decoration: underline;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
 }
 /*End Header*/
 
@@ -141,6 +146,8 @@ main h2 {
     letter-spacing: 5px;
 }
 
+
+
 main hr {
     height: 1px;
     background-color: #000;
@@ -149,6 +156,13 @@ main hr {
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+main h3 {
+    color: var(--tertiary-color);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    font-size: 25px;
+    font-weight: 600px;
 }
 
 #about {
@@ -197,7 +211,7 @@ main hr {
     flex-wrap: wrap;
     justify-content: center;
     font-weight: 600;
-    line-height: 1.2em;
+    line-height:1.2em;
     letter-spacing: .02em;
     margin-top: .5em ;
     margin-bottom: .5em ;
@@ -274,7 +288,7 @@ main hr {
   }
   
 .ani-image {
-    opacity: 1;
+    opacity:.4;
     display: block;
     width: 100%;
     height: 100%;
@@ -284,7 +298,7 @@ main hr {
   
 .middle {
     transition: .5s ease;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -294,7 +308,7 @@ main hr {
   }
   
 .ani-container:hover .ani-image {
-    opacity: 0.3;
+    opacity: 0.8;
   }
   
 .ani-container:hover .middle {
@@ -334,13 +348,19 @@ main footer a {
     text-decoration: none;
     color: var(--tertiary-color);
     font-weight: bold;
-    padding: 4px;
+    padding: 10px;
     font-size: 1.1em;
+    border-radius: 5px;
+
 }
 
 main footer a:hover {
     font-weight: bold;
     background-color: var(--primary-color);
+    -webkit-box-shadow: 0px 3px 2px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 3px 2px 2px rgba(0,0,0,0.25);
+    box-shadow: 0px 3px 2px 2px rgba(0,0,0,0.25);
+
 }
 
 main footer  ul {
@@ -430,7 +450,7 @@ header nav ul {
     color: var(--primary-color);
 }
 #about {
-    scroll-margin-top: 2em;
+    scroll-margin-top: 14em;
 }
     
 .hero {
@@ -451,7 +471,6 @@ header nav ul {
     padding: 2em 0;
     }
 
-    
 .hero #tag-line h2 {
     visibility:hidden;
      display: none;
