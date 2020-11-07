@@ -13,8 +13,9 @@ This site offers an alternative "mobile site" for those viewing on <768px screen
 https://webprinc3ss.github.io/portfolio/
 
 ## Media
-Animation: https://github.com/webprinc3ss/portfolio/blob/master/assets/images/portfolio_animation.gif<br/>
-Screenshot: https://github.com/webprinc3ss/portfolio/blob/master/assets/images/portfolio_screenshot.png
+![Animation:](assets/images/portfolio_animation.gif) <br/>
+![Screenshot:](assets/images/portfolio_screenshot.png) <br/>
+
 
 ## Credit
 Hand-coded and designed with ❤️ by webprinc3ss (me).
