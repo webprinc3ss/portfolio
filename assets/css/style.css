@@ -390,7 +390,7 @@ main footer ul li {
 }
 /*End Footer*/
 /*Media queries for phones and larger*/
-@media screen and (min-width: 200px) and (max-width: 767px)  {
+@media screen and (max-width: 767px)  {
 
     body {
         background-color: var(--secondary-color);
@@ -550,6 +550,7 @@ main footer ul li {
 .copy {
     margin: 0;
     padding: 0;
+    color: #000;
     }
 }
 
