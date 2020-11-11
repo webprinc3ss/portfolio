@@ -275,18 +275,11 @@ main h3 {
     grid-area: work-grid-item--5;
   }
 
-  /* #work-grid-item--6 {
-    grid-area: work-grid-item--6;
-  } */
-/* 
-  #work-grid-item--7 {
-    grid-area: work-grid-item--7;
-  } */
+
 
 .work-img {
-    /* width: 100%;
-    height: 100%; */
-    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -399,6 +392,10 @@ main footer ul li {
 /*Media queries for phones and larger*/
 @media screen and (min-width: 200px) and (max-width: 767px)  {
 
+    body {
+        background-color: var(--secondary-color);
+    }
+
 header {
     display: block;
     padding-bottom: 0;
@@ -492,7 +489,7 @@ header nav ul {
         
 main {
     padding: 2em .1em 0em .1em;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,0);
     -moz-box-shadow: 0px 0px 0px 10px rgba(0,0,0,0);
     box-shadow: 0px 0px 0px 10px rgba(0,0,0,0);
@@ -512,39 +509,15 @@ main {
     padding-left: 0em;
     }
     
-.work-grid-container {
-    grid-template-columns: 1f 1f 1f 1f 1f 1f 1f 1f 1f;
-    grid-template-rows: 2f 1f 1f 1f 1f 1f;
-    }
-    
-.work-grid-item--1 {
-    height: 300px;
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    }
-    
-.work-grid-item--2 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    }
-    
-.work-grid-item--3 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    }
-    
-.work-grid-item--4 {
-    height: 150px;
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 6;
-    grid-row-end: 6;
+    .work-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "work-grid-item--1"
+            "work-grid-item--4"
+            "work-grid-item--2" 
+            "work-grid-item--3"
+            "work-grid-item--5";
     }
 
 .ani-container .ani-image {
