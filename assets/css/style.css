@@ -524,15 +524,85 @@ main {
     }
     
     .work-grid-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-column: 1;
+        grid-template-columns: auto ;
         grid-template-areas:
             "work-grid-item--1"
             "work-grid-item--4"
             "work-grid-item--2" 
             "work-grid-item--3"
-            "work-grid-item--5";
+            "work-grid-item--4"
+            "work-grid-item--5"
+            "work-grid-item--6"
+            "work-grid-item--7"
+            "work-grid-item--8"
+            "work-grid-item--9"           
+            ;
     }
+
+    .work-grid-item {
+        background-color: var(--primary-color);
+        border: 1px solid #000;
+        color: var(--tertiary-color);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      #work-grid-item--1 {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+      }
+    
+      #work-grid-item--2 {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+      }
+    
+      #work-grid-item--3 {
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 1;
+      }
+    
+      #work-grid-item--4 {
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 1;
+      }
+    
+      #work-grid-item--5 {
+        grid-row-start: 5;
+        grid-row-end: 5;
+        grid-column-start: 1;
+      }
+    
+      #work-grid-item--6 {
+        grid-row-start: 6;
+        grid-row-end: 6;
+        grid-column-start: 1;
+      }
+    
+      #work-grid-item--7 {
+        grid-row-start: 7;
+        grid-row-end: 7;
+        grid-column-start: 1;
+      }
+      #work-grid-item--8 {
+        grid-row-start: 8;
+        grid-row-end: 8;
+        grid-column-start: 1;
+      }
+    
+      #work-grid-item--9 {
+        grid-row-start: 9;
+        grid-row-end: 9;
+        grid-column-start: 1;
+      }
+
+
 
 .ani-container .ani-image {
     opacity: 0.3;
