@@ -1,34 +1,4 @@
-//Begin Modal Popup Code
-//Get modal Element
-var modal = document.getElementById('simpleModal');
-//Get open Modal Button
-var modalBtn = document.getElementById('modalBtn');
-//Get close Btn
-var closeBtn = document.getElementsByClassName('closeBtn')[0];
-
-//Listen for open click
-modalBtn.addEventListener('click', openModal);
-//Listen for close click
-closeBtn.addEventListener('click', closeModal);
-//Listen for outside click
-window.addEventListener('click', outsideClick);
-
-//Function to open Modal
-function openModal() {
-    modal.style.display = 'block';
-};
-//Function to close Modal
-function closeModal() {
-    modal.style.display = 'none';
-};
-//Function to close Modal if outside click
-function outsideClick(e) {
-    if (e.target == modal) {
-        modal.style.display = 'none';
-    }
-};
-//End Modal Popup Code
-
+//Projects Data Template
 const projectsData = [
     {
         id: 1,
@@ -71,19 +41,53 @@ function techs(techs) {
   `;
 }
 
+
 function projectsTemplate(project) {
     return `
-      <div class="animal">
-      <img class="pet-photo" src="${pet.photo}">
-      <h2 class="pet-name">${pet.name} <span class="species">(${pet.species})</span></h2>
-      <p><strong>Age:</strong> ${age(pet.birthYear)}</p>
-      ${pet.favFoods ? foods(pet.favFoods) : ""}
-      </div>
-    `;
+<div class="work-grid-item" id="work-grid-item--${project.id}">
+                            <div class="ani-container">
+                                <img src="assets/images/${project.photo}" alt="${project.name}" class="ani-image work-img">
+                                <div class="ani-text middle" id="modalBtn">
+                                    ${project.name}<br />
+                                    <span class="ani-mini-text">  ${project.shortDescription}</span>
+                                </div>
+                            </div>
+                        </div>    `;
 }
 
 document.getElementById("app").innerHTML = `
-    <h1 class="app-title">Pets (${petsData.length} results)</h1>
-    ${petsData.map(petTemplate).join("")}
-    <p class="footer">These ${petsData.length} pets were added recently. Check back soon for updates.</p>
+    ${projectsData.map(projectsTemplate).join("")}
+    <p class="footer">These ${projectsData.length} projects were added recently. Check back soon for updates.</p>
   `;
+//End Projects Data Template
+
+//Begin Modal Popup Code
+//Get modal Element
+var modal = document.getElementById('simpleModal');
+//Get open Modal Button
+var modalBtn = document.getElementById('modalBtn');
+//Get close Btn
+var closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+//Listen for open click
+modalBtn.addEventListener('click', openModal);
+//Listen for close click
+closeBtn.addEventListener('click', closeModal);
+//Listen for outside click
+window.addEventListener('click', outsideClick);
+
+//Function to open Modal
+function openModal() {
+    modal.style.display = 'block';
+};
+//Function to close Modal
+function closeModal() {
+    modal.style.display = 'none';
+};
+//Function to close Modal if outside click
+function outsideClick(e) {
+    if (e.target == modal) {
+        modal.style.display = 'none';
+    }
+};
+//End Modal Popup Code
