@@ -127,6 +127,8 @@
             <div class="flex-row">
                 <hr>
             </div>
+
+            <!-- <button id="modalBtn" class="button">click here</button> -->
             <div class="flex-row">
                 <!--Begin Work Grid-->
                 <div class="work-grid-wrapper">
@@ -134,13 +136,14 @@
                         <div class="work-grid-item" id="work-grid-item--1">
                             <div class="ani-container">
                                 <img src="assets/images/mustfit.jpg" alt="Workday Scheduler" class="ani-image work-img">
-                                <div class="middle"><a href="https://quiet-refuge-60774.herokuapp.com/" target="_new">
-                                        <div class="ani-text">
-                                            Mustfit Pets Fullstack Project<br />
-                                            <span class="ani-mini-text">MERN: React, Express, React, Node</span>
-                                        </div>
-                                    </a>
+                                <!-- <div class="middle"> -->
+                                <!-- <a href="https://quiet-refuge-60774.herokuapp.com/" target="_new"> -->
+                                <div class="ani-text middle" id="modalBtn">
+                                    Mustfit Pets<br />
+                                    <span class="ani-mini-text"> Fullstack MERN</span>
                                 </div>
+                                <!-- </a> -->
+                                <!-- </div> -->
                             </div>
                         </div>
                         <div class="work-grid-item" id="work-grid-item--2">
@@ -260,21 +263,27 @@
             </div>
             <!--End Work Grid-->
             <!-- Modal Content -->
-            <button id="modalBtn" class="button">click here</button>
+            <!-- <button id="modalBtn" class="button">click here</button> -->
             <div id="simpleModal" class="modal">
                 <div class="modal-content">
                     <div class="modal-header">
                         <span class="closeBtn">&times;</span>
-                        <h2>Modal Header</h2>
+                        <h2>MustFit Pets</h2>
                     </div>
                     <div class="modal-body">
-                        <p>Hello... I am a modal!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi earum quos a, reiciendis
-                            dolores optio aut, autem voluptas consequatur, eum libero nemo repellat expedita sit.
-                            Suscipit quisquam voluptatum exercitationem officiis.</p>
+                        <p><b>Description:</b> Full stack MERN application to match harder-to-adopt pets with potential
+                            owners.
+                            Shelter staff can submit pets for adoption. Adopters can search for pets and save pets to
+                            their dashboard. Pets can be removed from your dashboard</p><br />
+                        <p><b>Technologies:</b> React | MongoDB | Graphql | Node.js | Mongoose | Apollo Client |
+                            Semantic UI React | PWA |
+                            BCrypt
+                            | JWT Token | Faker | Heroku</p>
                     </div>
                     <div class="modal-footer">
-                        <h3>Modal Footer</h3>
+                        <h4><a href="https://quiet-refuge-60774.herokuapp.com/ target =" _new">View Site</a> | <a
+                                href="https://github.com/calistamayer/pet-adoption" target="new">See Code</a>
+                        </h4>
                     </div>
                 </div>
             </div>

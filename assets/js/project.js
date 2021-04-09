@@ -1,3 +1,4 @@
+//Begin Modal Popup Code
 //Get modal Element
 var modal = document.getElementById('simpleModal');
 //Get open Modal Button
@@ -26,3 +27,4 @@ function outsideClick(e) {
         modal.style.display = 'none';
     }
 };
+//End Modal Popup Code
