@@ -33,6 +33,72 @@ const projectsData = [
         github: "https://github.com/webprinc3ss/the-adventure-series",
         photo: "adventure_series.jpg"
     },
+    {
+        id: 4,
+        name: "The Adventure Series",
+        shortDescription: "MVC CMS",
+        type: "Fullstack Group Project",
+        description: "Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
+        technologies: ["JavaScript", "CSS", "HTML", "Nodejs", "Express", "Handlebars", "MySql2", "Passport", "Passport-Strava", "Cookie Parser", "Connect-Session-Sequelize", "Connect-Ensure-Login", "Dotenv", "Heroku"],
+        deployed: "https://damp-anchorage-73357.herokuapp.com/",
+        github: "https://github.com/webprinc3ss/the-adventure-series",
+        photo: "adventure_series.jpg"
+    },
+    {
+        id: 5,
+        name: "The Adventure Series",
+        shortDescription: "MVC CMS",
+        type: "Fullstack Group Project",
+        description: "Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
+        technologies: ["JavaScript", "CSS", "HTML", "Nodejs", "Express", "Handlebars", "MySql2", "Passport", "Passport-Strava", "Cookie Parser", "Connect-Session-Sequelize", "Connect-Ensure-Login", "Dotenv", "Heroku"],
+        deployed: "https://damp-anchorage-73357.herokuapp.com/",
+        github: "https://github.com/webprinc3ss/the-adventure-series",
+        photo: "adventure_series.jpg"
+    },
+    {
+        id: 6,
+        name: "The Adventure Series",
+        shortDescription: "MVC CMS",
+        type: "Fullstack Group Project",
+        description: "Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
+        technologies: ["JavaScript", "CSS", "HTML", "Nodejs", "Express", "Handlebars", "MySql2", "Passport", "Passport-Strava", "Cookie Parser", "Connect-Session-Sequelize", "Connect-Ensure-Login", "Dotenv", "Heroku"],
+        deployed: "https://damp-anchorage-73357.herokuapp.com/",
+        github: "https://github.com/webprinc3ss/the-adventure-series",
+        photo: "adventure_series.jpg"
+    },
+    {
+        id: 7,
+        name: "The Adventure Series",
+        shortDescription: "MVC CMS",
+        type: "Fullstack Group Project",
+        description: "Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
+        technologies: ["JavaScript", "CSS", "HTML", "Nodejs", "Express", "Handlebars", "MySql2", "Passport", "Passport-Strava", "Cookie Parser", "Connect-Session-Sequelize", "Connect-Ensure-Login", "Dotenv", "Heroku"],
+        deployed: "https://damp-anchorage-73357.herokuapp.com/",
+        github: "https://github.com/webprinc3ss/the-adventure-series",
+        photo: "adventure_series.jpg"
+    },
+    {
+        id: 8,
+        name: "The Adventure Series",
+        shortDescription: "MVC CMS",
+        type: "Fullstack Group Project",
+        description: "Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
+        technologies: ["JavaScript", "CSS", "HTML", "Nodejs", "Express", "Handlebars", "MySql2", "Passport", "Passport-Strava", "Cookie Parser", "Connect-Session-Sequelize", "Connect-Ensure-Login", "Dotenv", "Heroku"],
+        deployed: "https://damp-anchorage-73357.herokuapp.com/",
+        github: "https://github.com/webprinc3ss/the-adventure-series",
+        photo: "adventure_series.jpg"
+    },
+    {
+        id: 9,
+        name: "The Adventure Series",
+        shortDescription: "MVC CMS",
+        type: "Fullstack Group Project",
+        description: "Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
+        technologies: ["JavaScript", "CSS", "HTML", "Nodejs", "Express", "Handlebars", "MySql2", "Passport", "Passport-Strava", "Cookie Parser", "Connect-Session-Sequelize", "Connect-Ensure-Login", "Dotenv", "Heroku"],
+        deployed: "https://damp-anchorage-73357.herokuapp.com/",
+        github: "https://github.com/webprinc3ss/the-adventure-series",
+        photo: "adventure_series.jpg"
+    },
 ];
 
 function techs(techs) {
@@ -40,7 +106,6 @@ function techs(techs) {
 <b>Technologies:</b> ${techs.map(tech => `${tech},`).join(", ")}
   `;
 }
-
 
 function projectsTemplate(project) {
     return `
