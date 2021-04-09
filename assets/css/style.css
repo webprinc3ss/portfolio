@@ -379,16 +379,43 @@ main h3 {
 .modal-content {
     background-color: #f4f4f4;
     margin: 20% auto;
-    padding: 20px;
     font-size: 17px;
     line-height: 1.6;
     width: 70%;
+    max-width: 500px;
     text-align: left;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),  0 7px 20px 0 rgba(0, 0, 0, 0.17),
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),  0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name:modalOpen;
+    animation-duration:1s;
+}
+
+.modal-header{
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: white;
+}
+
+.modal-header h2 {
+    color: white;
+    margin: 0;
+}
+
+.modal-footer h3 {
+    margin: 0;
+}
+
+.modal-footer {
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.modal-body {
+    padding:10px 20px;
 }
 
 .closeBtn {
-    color: #ccc;
+    color: #fff;
     float: right;
     font-size: 30px;
 }
@@ -397,7 +424,11 @@ main h3 {
     color: #000;
     text-decoration: none;
     cursor:pointer;
+}
 
+@keyframes modalOpen {
+    from{opacity:0}
+    to{opacity:1}
 }
 
 /*End Modal*/
