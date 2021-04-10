@@ -102,7 +102,9 @@ const projectsData = [
 ];
 
 function techs(techs) {
-    return `<b>Technologies:</b> ${techs.map(tech => `${tech} | `).join("")}`;
+    let techString = techs.map(tech => `${tech}, `).join("");
+    cleanString = techString.replace(/,\s*$/, "");
+    return `<b>Technologies:</b> ${cleanString}`;
 }
 
 function projectsTemplate(project) {
