@@ -58,7 +58,7 @@ const projectsData = [
     {
         id: 6,
         name: "The Social Network",
-        shortDescription: "RESTful API, Node.js, Express, Mongoose ODM",
+        shortDescription: "RESTful API, Node.js, Express, Mongoose",
         type: "Backend-only API Personal Project",
         description: "Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
         technologies: ["JavaScript", "CSS", "HTML", "Nodejs", "Express", "Handlebars", "MySql2", "Passport", "Passport-Strava", "Cookie Parser", "Connect-Session-Sequelize", "Connect-Ensure-Login", "Dotenv", "Heroku"],
