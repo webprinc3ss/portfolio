@@ -356,18 +356,6 @@ main h3 {
 .ani-mini-text {
     font-size: 14px;
   }
-/* End Animation */ 
-/* Modal */
-/* .button{
-    background-color: var(--primary-color);
-    padding: 1em 2em;
-    color: #fff;
-    border: 0;
-} */
-
-/* .button:hover {
-    background: #333;
-} */
 
 .modal {
     display:none;
@@ -691,8 +679,6 @@ main {
         grid-column-start: 1;
       }
 
-
-
 .ani-container .ani-image {
     opacity: 0.3;
     }
@@ -700,6 +686,20 @@ main {
 .ani-container .middle {
     opacity: 1;
     }
+
+.ani-text {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 60px;
+    height: 60px;
+    padding: 0px 0px;
+    width: 175px;
+
+    }
+
+.ani-mini-text {
+    display: none;
+} 
 
 
 main footer  {
