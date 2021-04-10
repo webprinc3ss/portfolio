@@ -58,7 +58,7 @@ const projectsData = [
     {
         id: 6,
         name: "The Social Network",
-        shortDescription: "RESTful API, Node.js, Express, Mongoose ODM",
+        shortDescription: "RESTful API, Node.js, Express, Mongoose",
         type: "Backend-only API Personal Project",
         description: "Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
         technologies: ["JavaScript", "CSS", "HTML", "Nodejs", "Express", "Handlebars", "MySql2", "Passport", "Passport-Strava", "Cookie Parser", "Connect-Session-Sequelize", "Connect-Ensure-Login", "Dotenv", "Heroku"],
@@ -102,33 +102,52 @@ const projectsData = [
 ];
 
 function techs(techs) {
-    return `
-<b>Technologies:</b> ${techs.map(tech => `${tech},`).join(", ")}
-  `;
-}
+    let techString = techs.map(tech => `${tech}, `).join("");
+    cleanString = techString.replace(/,\s*$/, "");
+    return `<b>Technologies:</b> ${cleanString}`;
+};
 
 function projectsTemplate(project) {
     return `
-<div class="work-grid-item" id="work-grid-item--${project.id}">
+                        <div class="work-grid-item" id="work-grid-item--${project.id}">
                             <div class="ani-container">
                                 <img src="assets/images/${project.photo}" alt="${project.name}" class="ani-image work-img">
-                                <div class="ani-text middle" id="modalBtn">
+                                <div class="ani-text middle modal-button" href="#myModal${project.id}">
                                     ${project.name}<br />
-                                    <span class="ani-mini-text">  ${project.shortDescription}</span>
+                                    <span class="ani-mini-text" href="#myModal${project.id}">  
+                                    ${project.shortDescription}
+                                    </span>
                                 </div>
                             </div>
-                        </div>    
+                        </div>  
+                        <!-- Modal content -->
+                <div id="myModal${project.id}" class="modal">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>${project.name}</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p><b>Description:</b><br />${project.description}</p><br />
+                                <p>${techs(project.technologies)}</p>
+                            </div>
+                            <div class="modal-footer">
+                                <h4><a href="${project.deployed}" target=" _new">View Site</a> |
+                                    <a href="${project.github}" target="new">See Code</a>
+                                </h4>
+                            </div>
+                     </div>
+                </div>
                         `;
 }
 
 document.getElementById("app").innerHTML = `
     ${projectsData.map(projectsTemplate).join("")}
-    <p class="footer">These ${projectsData.length} projects were added recently. Check back soon for updates.</p>
   `;
 //End Projects Data Template
 
 // Get the button that opens the modal
-var btn = document.querySelectorAll("button.modal-button");
+var btn = document.querySelectorAll("div.modal-button", "span.ani-mini-text");
 
 // All page modals
 var modals = document.querySelectorAll('.modal');
