@@ -109,17 +109,19 @@ function techs(techs) {
 
 function projectsTemplate(project) {
     return `
-<div class="work-grid-item" id="work-grid-item--${project.id}">
+                        <div class="work-grid-item" id="work-grid-item--${project.id}">
                             <div class="ani-container">
                                 <img src="assets/images/${project.photo}" alt="${project.name}" class="ani-image work-img">
                                 <div class="ani-text middle modal-button" href="#myModal${project.id}">
-                                    ${project.name}
+                                    ${project.name}<br />
+                                    <span class="ani-mini-text" href="#myModal${project.id}">  
+                                    ${project.shortDescription}
+                                    </span>
                                 </div>
                             </div>
                         </div>  
-                        <div id="myModal${project.id}" class="modal">
-
-        <!-- Modal content -->
+                        <!-- Modal content -->
+                <div id="myModal${project.id}" class="modal">
                     <div class="modal-content">
                             <div class="modal-header">
                                 <span class="closeBtn">&times;</span>
@@ -135,7 +137,7 @@ function projectsTemplate(project) {
                                 </h4>
                             </div>
                      </div>
-        </div>
+                </div>
                         
 
                         `;
@@ -143,12 +145,11 @@ function projectsTemplate(project) {
 
 document.getElementById("app").innerHTML = `
     ${projectsData.map(projectsTemplate).join("")}
-     ${projectsData.length}
   `;
 //End Projects Data Template
 
 // Get the button that opens the modal
-var btn = document.querySelectorAll("div.modal-button");
+var btn = document.querySelectorAll("div.modal-button", "span.ani-mini-text");
 
 // All page modals
 var modals = document.querySelectorAll('.modal');
