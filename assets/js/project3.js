@@ -102,9 +102,7 @@ const projectsData = [
 ];
 
 function techs(techs) {
-    return `
-<b>Technologies:</b> ${techs.map(tech => `${tech},`).join(", ")}
-  `;
+    return `<b>Technologies:</b> ${techs.map(tech => `${tech} | `).join("")}`;
 }
 
 function projectsTemplate(project) {
@@ -128,8 +126,8 @@ function projectsTemplate(project) {
                                 <h2>${project.name}</h2>
                             </div>
                             <div class="modal-body">
-                                <p><b>Description:</b> ${project.description}</p><br />
-                                <p><b>Technologies:</b> </p>
+                                <p><b>Description:</b><br />${project.description}</p><br />
+                                <p>${techs(project.technologies)}</p>
                             </div>
                             <div class="modal-footer">
                                 <h4><a href="${project.deployed}" target=" _new">View Site</a> |
@@ -138,8 +136,6 @@ function projectsTemplate(project) {
                             </div>
                      </div>
                 </div>
-                        
-
                         `;
 }
 
