@@ -112,23 +112,43 @@ function projectsTemplate(project) {
 <div class="work-grid-item" id="work-grid-item--${project.id}">
                             <div class="ani-container">
                                 <img src="assets/images/${project.photo}" alt="${project.name}" class="ani-image work-img">
-                                <div class="ani-text middle" id="modalBtn">
-                                    ${project.name}<br />
-                                    <span class="ani-mini-text">  ${project.shortDescription}</span>
+                                <div class="ani-text middle modal-button" href="#myModal${project.id}">
+                                    ${project.name}
                                 </div>
                             </div>
-                        </div>    
+                        </div>  
+                        <div id="myModal${project.id}" class="modal">
+
+        <!-- Modal content -->
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>${project.name}</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p><b>Description:</b> ${project.description}</p><br />
+                                <p><b>Technologies:</b> </p>
+                            </div>
+                            <div class="modal-footer">
+                                <h4><a href="${project.deployed}" target=" _new">View Site</a> |
+                                    <a href="${project.github}" target="new">See Code</a>
+                                </h4>
+                            </div>
+                     </div>
+        </div>
+                        
+
                         `;
 }
 
 document.getElementById("app").innerHTML = `
     ${projectsData.map(projectsTemplate).join("")}
-    <p class="footer">These ${projectsData.length} projects were added recently. Check back soon for updates.</p>
+     ${projectsData.length}
   `;
 //End Projects Data Template
 
 // Get the button that opens the modal
-var btn = document.querySelectorAll("button.modal-button");
+var btn = document.querySelectorAll("div.modal-button");
 
 // All page modals
 var modals = document.querySelectorAll('.modal');

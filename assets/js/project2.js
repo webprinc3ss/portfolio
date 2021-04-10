@@ -127,39 +127,33 @@ document.getElementById("app").innerHTML = `
   `;
 //End Projects Data Template
 
-// Get the button that opens the modal
-var btn = document.querySelectorAll("button.modal-button");
+//Begin Modal Popup Code
+//Get modal Element
+var modal = document.getElementById('simpleModal');
+//Get open Modal Button
+var modalBtn = document.getElementById('modalBtn');
+//Get close Btn
+var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
-// All page modals
-var modals = document.querySelectorAll('.modal');
+//Listen for open click
+modalBtn.addEventListener('click', openModal);
+//Listen for close click
+closeBtn.addEventListener('click', closeModal);
+//Listen for outside click
+window.addEventListener('click', outsideClick);
 
-// Get the <span> element that closes the modal
-var spans = document.getElementsByClassName("closeBtn");
-
-// When the user clicks the button, open the modal
-for (var i = 0; i < btn.length; i++) {
-    btn[i].onclick = function (e) {
-        e.preventDefault();
-        modal = document.querySelector(e.target.getAttribute("href"));
-        modal.style.display = "block";
+//Function to open Modal
+function openModal() {
+    modal.style.display = 'block';
+};
+//Function to close Modal
+function closeModal() {
+    modal.style.display = 'none';
+};
+//Function to close Modal if outside click
+function outsideClick(e) {
+    if (e.target == modal) {
+        modal.style.display = 'none';
     }
-}
-
-// When the user clicks on <span> (x), close the modal
-for (var i = 0; i < spans.length; i++) {
-    spans[i].onclick = function () {
-        for (var index in modals) {
-            if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-        }
-    }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target.classList.contains('modal')) {
-        for (var index in modals) {
-            if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-        }
-    }
-}
+};
 //End Modal Popup Code
