@@ -105,7 +105,7 @@ function techs(techs) {
     let techString = techs.map(tech => `${tech}, `).join("");
     cleanString = techString.replace(/,\s*$/, "");
     return `<b>Technologies:</b> ${cleanString}`;
-}
+};
 
 function projectsTemplate(project) {
     return `
