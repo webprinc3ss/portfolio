@@ -132,9 +132,9 @@ function projectsTemplate(project) {
                                 <p>${techs(project.technologies)}</p>
                             </div>
                             <div class="modal-footer">
-                                <h4><a href="${project.deployed}" target=" _new">View Site</a> |
-                                    <a href="${project.github}" target="new">See Code</a>
-                                </h4>
+                                <h6><a class="linked" href="${project.deployed}" target=" _new">View Site</a> |
+                                    <a  class="linked" href="${project.github}" target="new">See Code</a>
+                                </h6>
                             </div>
                      </div>
                 </div>
