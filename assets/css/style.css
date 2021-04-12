@@ -71,29 +71,29 @@ header nav ul {
 
 header nav ul li {
     padding: 10px;
+    
 }
 
-a.grow {
+li a {
     text-decoration: none;
     color: var(--secondary-color);
     /* background-color: (--secondary-color); */
     padding: 10px;
     border-radius: 5px;
     font-size: 1.2em;
-    /* transition: all .5s ease-in-out; */
 }
 
-a.grow:hover {
+li a:hover {
     color: whitesmoke;
     /* background-color: var(--primary-color); */
     padding: 10px;
     border-radius: 5px;
     /* font-size: 20px; */
-    transform: scale(5.0) !important;
+    /* transform: scale(5.0) !important; */
 }
 
-/* a.grow { transition: all .2s ease-in-out; } */
-/* a.grow:hover { font-size: 20px; } */
+li.grow { transition: all .4s ease-in-out; } 
+li.grow:hover {  transform: scale(1.2) }
 /*End Header*/
 
 /*Begin Hero*/
