@@ -8,6 +8,7 @@ This site offers an alternative "mobile site" for those viewing on <768px screen
 ## Built With
 * HTML5
 * CSS, including FlexBox, Grid, CSS animations and pseudoclasses.
+* Vanilla JavaScript
 
 ## Website
 https://webprinc3ss.github.io/portfolio/
