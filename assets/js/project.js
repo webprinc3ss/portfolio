@@ -132,18 +132,18 @@ function projectsTemplate(project) {
                                 <p>${techs(project.technologies)}</p>
                             </div>
                             <div class="modal-footer">
-                                <h6><a class="linked" href="${project.deployed}" target=" _new">View Site</a> |
-                                    <a  class="linked" href="${project.github}" target="new">See Code</a>
-                                </h6>
-                            </div>
-                     </div>
-                </div>
-                        `;
+                                <h6>
+                                 ${project.deployed ? ("<a class='linked' href=" + project.deployed + " target=' _new'>View Site</a> | ") : ""}<a class="linked" href="${project.github}" target="new">See Code</a>
+                                </h6 >
+                            </div >
+                     </div >
+                </div >
+        `;
 }
 
 document.getElementById("app").innerHTML = `
     ${projectsData.map(projectsTemplate).join("")}
-  `;
+    `;
 //End Projects Data Template
 
 // Get the button that opens the modal
