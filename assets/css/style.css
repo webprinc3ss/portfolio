@@ -42,6 +42,7 @@ header {
     top: 0;
     z-index: 9998;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -93,7 +94,7 @@ li a:hover {
 }
 
 li.grow { transition: all .4s ease-in-out; } 
-li.grow:hover {  transform: scale(1.2) }
+li.grow:hover {  transform: scale(1.4) }
 /*End Header*/
 
 /*Begin Hero*/
@@ -113,6 +114,7 @@ li.grow:hover {  transform: scale(1.2) }
     -moz-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
     box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
     position: relative;
+    align-items: center;
 }
 
 .fade-in-image {
@@ -507,7 +509,8 @@ main footer  {
 }
 
 .tel {
-    margin-bottom: 1em;
+    margin-bottom: .5em;
+    letter-spacing: .4em;
 }
 
 main footer a {
@@ -586,7 +589,7 @@ header li {
      }
 
 header ul li a {
-    font-size: 30px;
+    font-size: 22px;
     /* background-color: var(--tertiary-color); */
     padding: .2em;
     /* -webkit-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.25);
@@ -757,7 +760,7 @@ p {
       }
 
 .ani-container .ani-image {
-    opacity: 0.3;
+    opacity: 1;
     }
     
 .ani-container .middle {
@@ -795,7 +798,7 @@ main footer ul {
     }
                 
 main footer ul li {
-    font-size: 1.1em;
+    font-size: .8em;
     padding: 0em 0em 0em 0em;
     width: 100%;
     } 
@@ -811,7 +814,14 @@ main footer ul li {
     div.ani-text {
         top: 40% !important;
         left: 25% !important;
+        }
+        h2 {
+            line-height: 1.2em;
+            font-size: 17px;
+        }
 
+        div.metext h3 {
+            line-height: 25px;
         }
 }
 
