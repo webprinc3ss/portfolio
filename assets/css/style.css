@@ -206,7 +206,8 @@ li.grow:hover {  transform: scale(1.4) }
  
  
  .hero:hover .bg {
-    background-size: 150% 150%;
+    /* background-size: 150% 150%; */
+    transition: all 2.5s ease-in-out; 
  }
 
  .text {
