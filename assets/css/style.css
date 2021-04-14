@@ -626,6 +626,15 @@ main footer ul li {
 /*End Footer*/
 /*Media queries for phones and larger*/
 
+@media screen and (max-width: 1050px) {
+    .ani-text {
+        font-size: 18px;
+        font-weight: normal;
+        height: 100px;
+        width: 150px;
+        }
+}
+
 
 @media screen and (max-width: 830px)  {
 

@@ -124,8 +124,10 @@ function projectsTemplate(project) {
                 <div id="myModal${project.id}" class="modal">
                     <div class="modal-content">
                             <div class="modal-header">
+                            
                                 <span class="closeBtn">&times;</span>
                                 <h2>${project.name}</h2>
+                                <img style="float: right; padding-left: 5px; height: 50px" src='assets/images/${project.photo}'" />
                             </div>
                             <div class="modal-body">
                                 <p><b>Description:</b><br />${project.description}</p><br />
