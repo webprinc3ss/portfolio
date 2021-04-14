@@ -27,7 +27,7 @@ const projectsData = [
         name: "The Adventure Series",
         shortDescription: "MVC CMS, Handlebars, Node, OAuth, Express, ORM, CSS",
         type: "Fullstack Group Project",
-        description: "Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
+        description: "Set off on a bike adventure! Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
         technologies: ["JavaScript", "CSS", "HTML", "Nodejs", "Express", "Handlebars", "MySql2", "Passport", "Passport-Strava", "Cookie Parser", "Connect-Session-Sequelize", "Connect-Ensure-Login", "Dotenv", "Heroku"],
         deployed: "https://damp-anchorage-73357.herokuapp.com/",
         github: "https://github.com/webprinc3ss/the-adventure-series",
@@ -133,7 +133,8 @@ function projectsTemplate(project) {
                             </div>
                             <div class="modal-footer">
                                 <h6>
-                                 ${project.deployed ? ("<a class='linked' href=" + project.deployed + " target=' _new'>View Site</a> | ") : ""}<a class="linked" href="${project.github}" target="new">See Code</a>
+                                 ${project.deployed ? ("<a class='linked' href=" + project.deployed + " target=' _new'>View Site</a> | ") : ""}
+                                 ${project.github ? ("<a class='linked' href=" + project.github + " target=' _new'>See Github</a>") : "No Github"}
                                 </h6 >
                             </div >
                      </div >
