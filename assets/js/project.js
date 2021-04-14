@@ -133,8 +133,9 @@ function projectsTemplate(project) {
                             </div>
                             <div class="modal-footer">
                                 <h6>
-                                 ${project.deployed ? ("<a class='linked' href=" + project.deployed + " target=' _new'>View Site</a> | ") : ""}
-                                 ${project.github ? ("<a class='linked' href=" + project.github + " target=' _new'>See Github</a>") : "No Github"}
+                                 ${project.deployed ? ("<a class='linked' href=" + project.deployed + " target=' _new'>View Site</a>") : ""}
+                                 ${project.deployed && project.github ? (" | ") : ""}
+                                 ${project.github ? ("<a class='linked' href=" + project.github + " target=' _new'>See Github</a>") : ""}
                                 </h6 >
                             </div >
                      </div >
