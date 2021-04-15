@@ -633,6 +633,12 @@ main footer ul li {
         height: 100px;
         width: 150px;
         }
+
+    .ani-mini-text {
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: normal;
+        } 
 }
 
 
