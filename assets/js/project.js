@@ -80,7 +80,7 @@ const projectsData = [
     {
         id: 8,
         name: "Budget Tracker",
-        shortDescription: "HTML, CSS, JavaScript",
+        shortDescription: "PWA, WebPack, Service Worker, JavaScript",
         type: "Fullstack Refactor Project",
         description: "A budget tracker for the traveler to keep track of expenses with or without a data connection. Refactored saved as a PWA to one's device with web manifest.",
         technologies: ["JavaScript", "CSS", "HTML", "Nodejs", "webpack", "Express", "MongoDB", "Mongoose", "Heroku", "Service Worker", "PWA"],
