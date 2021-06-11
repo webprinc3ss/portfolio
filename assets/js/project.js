@@ -68,17 +68,28 @@ const projectsData = [
     },
     {
         id: 7,
-        name: "Code Quiz",
-        shortDescription: "HTML, CSS, JavaScript",
-        type: "Frontend Personal Project",
-        description: "Test your knowledge of JavaScript! The quiz uses a timer that will subtract or add points based on correct/wrong answers. High Scores saved to local storage. Clear leaderboard as needed.",
-        technologies: ["JavaScript", "CSS", "HTML"],
-        deployed: "https://webprinc3ss.github.io/code-quiz/",
-        github: "https://github.com/webprinc3ss/code-quiz",
-        photo: "codequiz_screenshot.png"
+        name: "UI Redesign",
+        shortDescription: "HTML, CSS, JQuery, Bootstrap, ADA Compliance",
+        type: "UI Redesign Proposal",
+        description: "UI redesign solution to be mobile responsive, intuitive and ADA compliant.",
+        technologies: ["JQuery", "CSS", "HTML", "Bootstrap"],
+        deployed: "https://webprinc3ss.github.io/queuing-system-ui-redesign/",
+        github: "https://github.com/webprinc3ss/queuing-system-ui-redesign",
+        photo: "queue-sys.jpg"
     },
     {
         id: 8,
+        name: "React Portfolio",
+        shortDescription: "React, CSS, HTML5, Responsive, SPA",
+        type: "Personal Portfolio",
+        description: "Professional portfolio using React, HTML5 and CSS3. Mobile-responsive design. Currently under construction for addition of backend/form-support.",
+        technologies: ["React", "CSS", "HTML"],
+        deployed: "https://webprinc3ss.github.io/react-portfolio/",
+        github: "https://github.com/webprinc3ss/react-portfolio",
+        photo: "react_portfolio_ss.jpg"
+    },
+    {
+        id: 9,
         name: "Budget Tracker",
         shortDescription: "PWA, WebPack, Service Worker, JavaScript",
         type: "Fullstack Refactor Project",
@@ -89,7 +100,7 @@ const projectsData = [
         photo: "budget_tracker.png"
     },
     {
-        id: 9,
+        id: 10,
         name: "Carolyn Bryant CPA",
         shortDescription: "Custom WordPress",
         type: "Paid Freelance Project",
@@ -99,6 +110,29 @@ const projectsData = [
         github: "",
         photo: "cpa.jpg"
     },
+    {
+        id: 11,
+        name: "Code Quiz",
+        shortDescription: "HTML, CSS, JavaScript",
+        type: "Frontend Personal Project",
+        description: "Test your knowledge of JavaScript! The quiz uses a timer that will subtract or add points based on correct/wrong answers. High Scores saved to local storage. Clear leaderboard as needed.",
+        technologies: ["JavaScript", "CSS", "HTML"],
+        deployed: "https://webprinc3ss.github.io/code-quiz/",
+        github: "https://github.com/webprinc3ss/code-quiz",
+        photo: "codequiz_screenshot.png"
+    },
+
+    {
+        id: 12,
+        name: "Ecommerce Back End",
+        shortDescription: "RESTful API end-points",
+        type: "Back-end API",
+        description: "Using the Sequelize ORM, create models and routes for the RESTful api end-points for an already functional Express.js API. Video demo at 'deployed' site.",
+        technologies: ["Sequelize", "MySQL", "Express", "dotenv", "Insomnia Core"],
+        deployed: "https://drive.google.com/file/d/150fot3lkTtuUIntXz6A6Bh_7sP0vW6gg/view",
+        github: "https://github.com/webprinc3ss/e-commerce-back-end",
+        photo: "back-end.jpg"
+    }
 ];
 
 function techs(techs) {
