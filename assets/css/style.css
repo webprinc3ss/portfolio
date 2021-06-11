@@ -720,7 +720,10 @@ p {
             "work-grid-item--6"
             "work-grid-item--7"
             "work-grid-item--8"
-            "work-grid-item--9"           
+            "work-grid-item--9" 
+            "work-grid-item--10"
+            "work-grid-item--11"
+            "work-grid-item--12"            
             ;
     }
 
@@ -783,6 +786,23 @@ p {
       #work-grid-item--9 {
         grid-row-start: 9;
         grid-row-end: 9;
+        grid-column-start: 1;
+      }
+
+      #work-grid-item--10 {
+        grid-row-start: 10;
+        grid-row-end: 10;
+        grid-column-start: 1;
+      }
+      #work-grid-item--11 {
+        grid-row-start: 11;
+        grid-row-end: 11;
+        grid-column-start: 1;
+      }
+    
+      #work-grid-item--12 {
+        grid-row-start: 12;
+        grid-row-end: 12;
         grid-column-start: 1;
       }
 
