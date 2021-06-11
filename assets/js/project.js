@@ -99,40 +99,40 @@ const projectsData = [
         github: "https://github.com/webprinc3ss/budget-tracker",
         photo: "budget_tracker.png"
     },
-    {
-        id: 10,
-        name: "Carolyn Bryant CPA",
-        shortDescription: "Custom WordPress",
-        type: "Paid Freelance Project",
-        description: "A new accountant in her town desperately needed a web presence before tax season.  Already she has gained clients thanks to the form!",
-        technologies: ["Mobile-responsive", "CSS", "HTML", "WordPress", "SMTP", "PhotoShop"],
-        deployed: "https://www.carolynbryantcpa.com/",
-        github: "",
-        photo: "cpa.jpg"
-    },
-    {
-        id: 11,
-        name: "Code Quiz",
-        shortDescription: "HTML, CSS, JavaScript",
-        type: "Frontend Personal Project",
-        description: "Test your knowledge of JavaScript! The quiz uses a timer that will subtract or add points based on correct/wrong answers. High Scores saved to local storage. Clear leaderboard as needed.",
-        technologies: ["JavaScript", "CSS", "HTML"],
-        deployed: "https://webprinc3ss.github.io/code-quiz/",
-        github: "https://github.com/webprinc3ss/code-quiz",
-        photo: "codequiz_screenshot.png"
-    },
+    // {
+    //     id: 10,
+    //     name: "Carolyn Bryant CPA",
+    //     shortDescription: "Custom WordPress",
+    //     type: "Paid Freelance Project",
+    //     description: "A new accountant in her town desperately needed a web presence before tax season.  Already she has gained clients thanks to the form!",
+    //     technologies: ["Mobile-responsive", "CSS", "HTML", "WordPress", "SMTP", "PhotoShop"],
+    //     deployed: "https://www.carolynbryantcpa.com/",
+    //     github: "",
+    //     photo: "cpa.jpg"
+    // },
+    // {
+    //     id: 11,
+    //     name: "Code Quiz",
+    //     shortDescription: "HTML, CSS, JavaScript",
+    //     type: "Frontend Personal Project",
+    //     description: "Test your knowledge of JavaScript! The quiz uses a timer that will subtract or add points based on correct/wrong answers. High Scores saved to local storage. Clear leaderboard as needed.",
+    //     technologies: ["JavaScript", "CSS", "HTML"],
+    //     deployed: "https://webprinc3ss.github.io/code-quiz/",
+    //     github: "https://github.com/webprinc3ss/code-quiz",
+    //     photo: "codequiz_screenshot.png"
+    // },
 
-    {
-        id: 12,
-        name: "Ecommerce Back End",
-        shortDescription: "RESTful API end-points",
-        type: "Back-end API",
-        description: "Using the Sequelize ORM, create models and routes for the RESTful api end-points for an already functional Express.js API. Video demo at 'deployed' site.",
-        technologies: ["Sequelize", "MySQL", "Express", "dotenv", "Insomnia Core"],
-        deployed: "https://drive.google.com/file/d/150fot3lkTtuUIntXz6A6Bh_7sP0vW6gg/view",
-        github: "https://github.com/webprinc3ss/e-commerce-back-end",
-        photo: "back-end.jpg"
-    }
+    // {
+    //     id: 12,
+    //     name: "Ecommerce Back End",
+    //     shortDescription: "RESTful API end-points",
+    //     type: "Back-end API",
+    //     description: "Using the Sequelize ORM, create models and routes for the RESTful api end-points for an already functional Express.js API. Video demo at 'deployed' site.",
+    //     technologies: ["Sequelize", "MySQL", "Express", "dotenv", "Insomnia Core"],
+    //     deployed: "https://drive.google.com/file/d/150fot3lkTtuUIntXz6A6Bh_7sP0vW6gg/view",
+    //     github: "https://github.com/webprinc3ss/e-commerce-back-end",
+    //     photo: "back-end.jpg"
+    // }
 ];
 
 function techs(techs) {
